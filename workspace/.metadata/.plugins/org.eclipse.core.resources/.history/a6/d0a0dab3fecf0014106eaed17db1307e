@@ -1,0 +1,70 @@
+package com.hydra.user.entity;
+
+import java.io.Serializable;
+import javax.persistence.*;
+import java.util.List;
+
+
+/**
+ * The persistent class for the PartyType database table.
+ * 
+ */
+@Entity
+@Table(name="Party_Type")
+@NamedQuery(name="PartyType.findAll", query="SELECT p FROM PartyType p")
+public class PartyType implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@Column(name="party_type_code", unique=true, nullable=false, length=10)
+	private String partyTypeCode;
+
+	@Column(name="partyTypeDesc",length=100)
+	private String partyTypeDesc;
+
+	//bi-directional many-to-one association to Party
+	@OneToMany(mappedBy="partyType")
+	private List<Party> parties;
+
+	public PartyType() {
+	}
+
+	public String getPartyTypeCode() {
+		return this.partyTypeCode;
+	}
+
+	public void setPartyTypeCode(String partyTypeCode) {
+		this.partyTypeCode = partyTypeCode;
+	}
+
+	public String getParty_Type_Desc() {
+		return this.partyTypeDesc;
+	}
+
+	public void setParty_Type_Desc(String party_Type_Desc) {
+		this.partyTypeDesc = party_Type_Desc;
+	}
+
+	public List<Party> getParties() {
+		return this.parties;
+	}
+
+	public void setParties(List<Party> parties) {
+		this.parties = parties;
+	}
+
+	public Party addParty(Party party) {
+		getParties().add(party);
+		party.setPartyType(this);
+
+		return party;
+	}
+
+	public Party removeParty(Party party) {
+		getParties().remove(party);
+		party.setPartyType(null);
+
+		return party;
+	}
+
+}
