@@ -4,4 +4,5 @@
 <fullyQualifiedTypeName name="java.sql.Time"/>
 <fullyQualifiedTypeName name="java.sql.Timestamp"/>
 <fullyQualifiedTypeName name="javax.persistence.Column"/>
+<fullyQualifiedTypeName name="com.hydra.user.entity.Party"/>
 </qualifiedTypeNameHistroy>
