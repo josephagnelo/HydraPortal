@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.hydra.account.entity.Payment_Account.java&apos; to &apos;PaymentAccount.java&apos;&#x0A;- Original project: &apos;Persistence&apos;&#x0A;- Original element: &apos;com.hydra.account.entity.Payment_Account.java&apos;&#x0A;- Renamed element: &apos;com.hydra.account.entity.PaymentAccount.java&apos;" description="Rename compilation unit &apos;Payment_Account.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.hydra.account.entity{Payment_Account.java" name="PaymentAccount.java" references="false" stamp="1430429939045" version="1.0"/>
+</session>

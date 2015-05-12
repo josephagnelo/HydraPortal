@@ -1,0 +1,10 @@
+package com.hydra.test.mains;
+
+public class TestPartyService {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

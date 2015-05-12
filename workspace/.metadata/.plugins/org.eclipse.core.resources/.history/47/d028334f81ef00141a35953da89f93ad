@@ -1,0 +1,97 @@
+package com.hydra.account.entity;
+
+import java.io.Serializable;
+import javax.persistence.*;
+
+
+/**
+ * The persistent class for the Payment_Account database table.
+ * 
+ */
+@Entity
+@NamedQuery(name="Payment_Account.findAll", query="SELECT p FROM Payment_Account p")
+public class Payment_Account implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@Column(name="bank_account_number")
+	private String bankAccountNumber;
+
+	@Column(name="account_access_type_id")
+	private String accountAccessTypeId;
+
+	@Column(name="bank_account_type")
+	private String bankAccountType;
+
+	@Column(name="bank_fed_wire_code")
+	private String bankFedWireCode;
+
+	@Column(name="bank_name")
+	private String bankName;
+
+	@Column(name="bank_routing_number")
+	private String bankRoutingNumber;
+
+	@Column(name="party_id")
+	private String partyId;
+
+	public Payment_Account() {
+	}
+
+	public String getBankAccountNumber() {
+		return this.bankAccountNumber;
+	}
+
+	public void setBankAccountNumber(String bankAccountNumber) {
+		this.bankAccountNumber = bankAccountNumber;
+	}
+
+	public String getAccountAccessTypeId() {
+		return this.accountAccessTypeId;
+	}
+
+	public void setAccountAccessTypeId(String accountAccessTypeId) {
+		this.accountAccessTypeId = accountAccessTypeId;
+	}
+
+	public String getBankAccountType() {
+		return this.bankAccountType;
+	}
+
+	public void setBankAccountType(String bankAccountType) {
+		this.bankAccountType = bankAccountType;
+	}
+
+	public String getBankFedWireCode() {
+		return this.bankFedWireCode;
+	}
+
+	public void setBankFedWireCode(String bankFedWireCode) {
+		this.bankFedWireCode = bankFedWireCode;
+	}
+
+	public String getBankName() {
+		return this.bankName;
+	}
+
+	public void setBankName(String bankName) {
+		this.bankName = bankName;
+	}
+
+	public String getBankRoutingNumber() {
+		return this.bankRoutingNumber;
+	}
+
+	public void setBankRoutingNumber(String bankRoutingNumber) {
+		this.bankRoutingNumber = bankRoutingNumber;
+	}
+
+	public String getPartyId() {
+		return this.partyId;
+	}
+
+	public void setPartyId(String partyId) {
+		this.partyId = partyId;
+	}
+
+}

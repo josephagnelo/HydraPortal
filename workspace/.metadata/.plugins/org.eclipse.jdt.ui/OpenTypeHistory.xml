@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=Persistence/src&lt;com.hydra.user.entity{Party.java[Party" modifiers="1" timestamp="1426965238000"/>
-<typeInfo handle="=Persistence/src&lt;com.hydra.user.entitymanagers{PartyManager.java[PartyManager" modifiers="513" timestamp="1426996061000"/>
-<typeInfo handle="=Persistence/src&lt;com.hydra.user.entitymanagers.impl{PartyManagerImpl.java[PartyManagerImpl" modifiers="1" timestamp="1426996249000"/>
+<typeInfo handle="=Persistence/src&lt;com.hydra.user.entity{Party.java[Party" modifiers="1" timestamp="1426998997000"/>
+<typeInfo handle="=Persistence/src&lt;com.hydra.user.entitymanagers{PartyManager.java[PartyManager" modifiers="513" timestamp="1426998997000"/>
+<typeInfo handle="=Persistence/src&lt;com.hydra.user.entitymanagers.impl{PartyManagerImpl.java[PartyManagerImpl" modifiers="1" timestamp="1426998997000"/>
 </typeInfoHistroy>

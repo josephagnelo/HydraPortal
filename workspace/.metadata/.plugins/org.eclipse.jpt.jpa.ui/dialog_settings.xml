@@ -5,14 +5,14 @@
 		<item value="false" key="expanded3"/>
 		<item value="false" key="expanded2"/>
 		<item value="false" key="expanded1"/>
-		<item value="false" key="expanded8"/>
 		<item value="false" key="expanded10"/>
-		<item value="false" key="expanded7"/>
+		<item value="false" key="expanded8"/>
 		<item value="false" key="expanded11"/>
-		<item value="false" key="expanded6"/>
+		<item value="false" key="expanded7"/>
 		<item value="false" key="expanded12"/>
-		<item value="false" key="expanded5"/>
+		<item value="false" key="expanded6"/>
 		<item value="false" key="expanded13"/>
+		<item value="false" key="expanded5"/>
 		<item value="false" key="expanded9"/>
 		<item value="false" key="expanded0"/>
 	</section>
@@ -22,8 +22,8 @@
 		<section name="DialogBoundsSettings">
 			<item value="600" key="DIALOG_WIDTH"/>
 			<item value="117" key="DIALOG_Y_ORIGIN"/>
-			<item value="500" key="DIALOG_HEIGHT"/>
 			<item value="420" key="DIALOG_X_ORIGIN"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
 			<item value="1|.Helvetica Neue DeskInterface|11.0|0|COCOA|1|.HelveticaNeueDeskInterface-Regular" key="DIALOG_FONT_NAME"/>
 		</section>
 	</section>

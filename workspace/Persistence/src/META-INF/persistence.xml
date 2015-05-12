@@ -8,6 +8,8 @@
 		<class>com.hydra.user.entity.Party_Email</class>
 		<class>com.hydra.user.entity.Party_Phone</class>
 		<class>com.hydra.user.entity.Party_PhonePK</class>
+		<class>com.hydra.user.entity.PartyBiometric</class>
+		<class>com.hydra.account.entity.PaymentAccount</class>
 		<properties>
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/CORE"/>
 			<property name="javax.persistence.jdbc.user" value="CORE"/>

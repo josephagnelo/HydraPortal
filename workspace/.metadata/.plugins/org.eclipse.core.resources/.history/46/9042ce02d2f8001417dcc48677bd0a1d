@@ -1,0 +1,84 @@
+/**
+ * 
+ */
+package com.hydra.services.impl;
+
+import java.sql.SQLException;
+
+import javax.persistence.EntityManager;
+
+import com.hydra.services.PartyService;
+import com.hydra.user.entity.Party;
+import com.hydra.user.exceptions.PartyException;
+
+/**
+ * @author jskariah
+ *
+ */
+
+public class PartyServiceImpl implements PartyService {
+	
+	private EntityManager entityManager;
+
+	/* (non-Javadoc)
+	 * @see com.hydra.services.PartyService#getPartyByPartyId(java.lang.String)
+	 */
+	@Override
+	public Party getPartyByPartyId(String partyId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/* (non-Javadoc)
+	 * @see com.hydra.services.PartyService#createParty(com.hydra.user.entity.Party)
+	 */
+	@Override
+	public void createParty(Party party) {
+		if(null != entityManager)
+		{
+			entityManager.persist(party);
+		}
+		else
+		{
+			//TODO - Add logging.
+		}
+
+	}
+
+	/* (non-Javadoc)
+	 * @see com.hydra.services.PartyService#deletePartyByPartyId(java.lang.String)
+	 */
+	@Override
+	public void deletePartyByPartyId(String partyId) {
+		// TODO Auto-generated method stub
+
+	}
+
+	/* (non-Javadoc)
+	 * @see com.hydra.services.PartyService#deleteParty(com.hydra.user.entity.Party)
+	 */
+	@Override
+	public void deleteParty(Party party) throws PartyException {
+		// TODO Auto-generated method stub
+
+	}
+
+	/* (non-Javadoc)
+	 * @see com.hydra.services.PartyService#updateParty(com.hydra.user.entity.Party, java.lang.Boolean)
+	 */
+	@Override
+	public void updateParty(Party party, Boolean fullUpdate)
+			throws PartyException {
+		// TODO Auto-generated method stub
+
+	}
+
+	public EntityManager getEntityManager() {
+		return entityManager;
+	}
+
+	public void setEntityManager(EntityManager entityManager) {
+		this.entityManager = entityManager;
+	}
+
+}
